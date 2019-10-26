@@ -9,16 +9,16 @@ This Library allows Developers to Get all weather data based on Zip code in json
 ## Installation
 
 ```bash
-pip install weatherUSA
+pip install weatherusa
 ```
 ## Usage
 
 ```python
-from  weatherUSA import *
+import sys
+from weatherusa.weatherusa import Weather
 
-w = Weather()
-resp = r.weather_get(zip='06604')
-print(resp)
+obj = Weather()
+print(obj.weather_get(zip='06604'))
 
 ```
 
